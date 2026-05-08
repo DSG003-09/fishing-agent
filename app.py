@@ -12,12 +12,12 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=OPENAI_API_KEY) if OPENAI_API_KEY else None
 
 st.set_page_config(
-    page_title="Fishing Conditions Agent",
+    page_title="Fishing Conditions",
     page_icon="🎣",
     layout="wide"
 )
 
-st.title("🎣 Fishing Conditions Agent")
+st.title("🎣 Fishing Conditions")
 st.write("Enter a lake and location to get current fishing-condition signals.")
 
 lake_name = st.text_input("Lake name", value="Alice Lake")
